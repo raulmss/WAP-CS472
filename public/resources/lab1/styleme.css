@@ -1,0 +1,21 @@
+.bold {
+    font-weight: bold;
+    color: red;
+}
+
+.tittles{
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+body{
+    background-color: rgb(33, 33, 82);
+    color: azure;
+}
+
+.moodSection{
+    text-align: center;
+}
+
+#mood{
+    background-color: rgb(25, 25, 54);
+}
