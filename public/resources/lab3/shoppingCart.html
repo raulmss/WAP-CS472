@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./sc.css">
+</head>
+<body>
+    <div>
+        <div id="heading">
+            <span class="span-1"><img id="logo" width="100" height="52" src="../images/logoLab3.png" alt=""></span>
+            <span id="greeting" class="span-1 center">Welcome, Raul!</span>
+            <span  class="span-1 right"><button class="Btn">Logout</button></span>
+        </div>
+        <div id="prodList">
+            <div>
+                <h2>Product List</h2>
+            </div>
+            <table class="standardTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>Node.js</td>
+                    <td>9.99</td>
+                    <td>8</td>
+                    <td><button class="icon-button"><img src="../images/shopping-cart.png" alt="shopping cart"> </button></td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>19.99</td>
+                    <td>5</td>
+                    <td><button class="icon-button"><img src="../images/shopping-cart.png" alt="shopping cart"> </button></td>
+                </tr>
+                <tr>
+                    <td>Angular</td>
+                    <td>29.99</td>
+                    <td>13</td>
+                    <td><button class="icon-button"><img src="../images/shopping-cart.png" alt="shopping cart"> </button></td>
+                </tr>
+            </table>
+        </div>
+        <div id="checkOut">
+            <div>
+                <h2>Your Shopping Cart</h2>
+            </div>
+            <div>
+                <table class="standardTable">
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <tr>
+                        <td>Node.js</td>
+                        <td>9.99</td>
+                        <td>9.99</td>
+                        <td>
+                            <input class="inputNumber" type="number" name="count" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Angular</td>
+                        <td>29.99</td>
+                        <td>290.99</td>
+                        <td>
+                            <input class="inputNumber" type="number" name="count" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><span style="float: right; margin-right: 10px;">Total:</span></td>
+                        <td> 300.98</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="checkOutBtn">
+            <button class="Btn">Place Order</button>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fraulmss.github.io%2FWAP-CS472%2Fpublic%2Fresources%2Flab2%2Faboutme.html">
+                <img src="../images/htmlchecker.png" alt="htmlchecker" width=100 height=40>
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fraulmss.github.io%2FWAP-CS472%2Fpublic%2Fresources%2Flab2%2Fstyleme.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR">
+                <img src="../images/css_checker.png" alt="htmlchecker" width=100 height=40>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
