@@ -53,12 +53,20 @@ h2{
     margin-top: 15px;
     margin-right: 15px;
 }
+
+.prodList {
+    display: flex;
+    align-items: flex-end;
+}
 .standardTable{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100%;
     border-collapse: collapse;
     border: 1px solid white;
     background-color: rgb(93, 81, 109);
+    display: flex;
+    justify-content: space-around;
+   
 }
 .standardTable tr:hover{
     background-color: gray;
@@ -70,8 +78,10 @@ h2{
     padding-bottom: 10px;
     background-color: purple;
     text-align: left;
+    width: 20em;
 
 }
+
 tr{
     color: white;
     border: 1px solid white;
@@ -91,4 +101,11 @@ tr{
 }
 footer{
     margin-top: 50px;
+}
+#checkers{
+    display: flex;
+    justify-content: center;
+}
+#checkers > a{
+    margin: 15px;
 }
