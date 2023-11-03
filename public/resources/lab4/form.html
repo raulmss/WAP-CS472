@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./forms.css">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="parentContainer">
+        <form action="#">
+            <fieldset>
+                <div id="title">
+                    <div>
+                        <span>Workshop Registration</span>
+                    </div>
+                    <div>
+                        <select name="More Actions" id="actions">
+                            <option value="" selected disabled>More Options</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="childContainer">
+                    <div>
+                        <p class="ptittle">Register now while seats are available!</p>
+                    </div>
+                    <div id="question">
+                        <div class="container" id="containerOne">
+                            <label for="firstName">First Name <span class="required">*</span>
+                                <input id="firstName" name="firstName" type="text" required>
+                            </label>
+                            <label for="lastName">Last Name <span class="required">*</span>
+                                <input id="lastName" name="lastName" type="text" required>
+                            </label>
+                            <label for="compInst">Company/Instituion <span class="required">*</span>
+                                <input id="compInst" name="compInst" type="text" required>
+                            </label>
+                            <label for="address">Address
+                                <textarea id="address" name="address"></textarea>
+                            </label>
+                            <label for="city">City
+                                <input id="city" name="city" type="text">
+                            </label>
+                            <label for="state">State/Province/Region
+                                <select name="state" id="state">
+                                    <option value="" selected disabled>-Select-</option>
+                                </select>
+                            </label>
+                            <label for="country">Country
+                                <select name="country" id="country">
+                                    <option value="" selected disabled>-Select-</option>
+                                </select>
+                            </label>
+                            <label for="email">E-mail
+                                <input id="email" name="email" pattern="[a-zA-Z0-9.%*-_]+[@][a-zA-Z0-9-_]+\.[a-zA-Z]{2,}" type="email">
+                            </label>
+                            <label for="phone">Phone Number
+                                <input id="phone" name="phone" pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" type="text">
+                            </label>
+                        </div>
+                        <div class="container" id="secondContainer">
+                            <div><p id="ltittle" class="ptittle">Lunch</p></div>
+                            <label for="meal">Meal Preference
+                                <select name="meal" id="meal">
+                                    <option value="none" selected disabled>Vegetarian</option>
+                                </select>
+                            </label>
+                                <p class="ptittle">Payment Details</p>
+                                <div>
+
+                                </div>
+                                
+                                <div class="question">
+                                    <label id="paymentMode">Payment Mode</label>   
+                                    <div id="checkboxOpt">
+                                            <div>
+                                                <input type="checkbox" id="cash" name="payment" value="cash"> 
+                                                <label for="cash">Cash</label>
+                                            </div>
+                                            
+                                            <div>
+                                                <input type="checkbox" id="cheque" name="payment" value="cheque">
+                                                <label for="cheque">Cheque</label>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" id="demand" name="payment" value="demand"> 
+                                                <label for="demand">Demand Draft</label>
+                                            </div>    
+                                    </div>
+                                </div>
+
+                                <label for="ddc">DD/Cheque No.
+                                    <input id="ddc" name="ddc" type="text">
+                                </label>
+
+                                <label for="bankName">Drawn On (Bank Name)
+                                    <input id="bankName" name="bankName" type="text">
+                                </label>
+
+                                <label for="payable">Payable at
+                                    <input id="payable" name="payable" type="text">
+                                </label>
+                        </div>
+                    </div>
+                </div>
+                <div id="btns">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </fieldset>
+        </form>
+            
+    </div>
+    <div id="foot">
+        <a href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fraulmss.github.io%2FWAP-CS472%2Fpublic%2Fresources%2Flab4%2Fform.html">
+            <img src="../images/htmlchecker.png" alt="htmlchecker" width=100 height=40>
+        </a>
+        <a href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fraulmss.github.io%2FWAP-CS472%2Fpublic%2Fresources%2Flab4%2forms.css">
+            <img src="../images/css_checker.png" alt="htmlchecker" width=100 height=40>
+        </a>
+    </div>
+</body>
+</html>

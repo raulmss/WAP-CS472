@@ -1,0 +1,114 @@
+form{
+    width: 70%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+fieldset{
+    padding: 0;
+}
+#actions{
+    border: 0px;
+    outline: 0px;
+    color: white;
+    margin-left: 25px;
+    
+    background-color: purple;
+    text-decoration: none;
+}
+select:hover{
+    background-color: white;
+}
+#title{
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.ptittle{
+    text-decoration: underline;
+    color: brown;
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.childContainer{
+    margin-left: 10px;
+}
+
+label>input, label>select, textarea{
+float: right;
+margin: 10px;
+margin-top: 0;
+width: 43%;
+}
+
+textarea{
+    height: 90px;
+}
+
+label>select{
+    width: 46%;
+}
+
+#question{
+    display: flex;
+    justify-content: space-between;
+}
+#ltittle, #paymentMode{
+    margin-top: 0;
+}
+
+.parentContainer{
+    display: flex;
+    justify-content: center;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+}
+#checkboxOpt{
+width: 48%;
+margin-bottom: 30px;
+}
+#checkboxOpt label{
+    font-weight: lighter;
+
+}
+label{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#containerOne{
+    margin-top: 10px;
+}
+#btns{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(133, 90, 133);
+}
+input[type="submit"], input[type="reset"]{
+    margin: 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+    color: yellow;
+    background-color: purple;
+    font-size: 16px;
+    font-weight: bold;
+}
+input[type="submit"]:hover, input[type="reset"]:hover{
+        background-color: yellow;color: purple;
+}
+.required{
+    color: red;
+}
+#foot{
+    display: flex;
+    justify-content: center;
+}
+#foot img{
+    margin: 15px;
+}
