@@ -9,5 +9,18 @@
     <div style="display: flex; justify-content: center;">
             <img width="70%" height="80%" src="../images/Lab6EC.png" alt="lab6Answer">
     </div>
+    <h1>Inspect Element to see answer #3</h1>
+    <script>
+        function count(start, end){
+            for(let i = start; i<=end;i++){
+                setTimeout(function(x){
+                    return function(){
+                        console.log(i)
+                    };
+                }(i), i*1000)
+            }
+        }
+        count(1,10)
+    </script>
 </body>
 </html>
