@@ -35,11 +35,11 @@ console.log(getNewArray(["Fabia", "Joao", "Renata", "Raul", "Lays", "Joao Fabio"
 // concat('hi', [1,2,3], ['Hello','world']) -> return result: ['h', 'i', 1,2,3, 'Hello','world']
 
 const concat = (...more) => {
-    let a = [];
-    for(let i =0; i<more.length; i++){
-        a.push(...more[i]);
-    }
-    return a;
+    // let a = [];
+    // for(let i =0; i<more.length; i++){
+    //     a.push(...more[i]);
+    // }
+    return more.flatMap(e=>[...e]);
 }
 
 console.log(concat('hi', ["Joao", "Fabia", "Renata", "Raul", "Lays", "Joao Fabio"],[1,2,3], ['Hello','world']));
