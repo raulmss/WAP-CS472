@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10: Answers</title>
+</head>
+
+<body>
+    <h1>Answers: </h1>
+    <h2>
+        Question 1:
+    </h2>
+    <p>
+        1 - Timers Queue: This queu is the one that will take of the setTimeOut and setInterval callbacks.<br>
+        2 - I/O Queue: This will take care about I/O related callbacks, such as network requests and file system.<br>
+        3 - nextTick Queue: Takes care of those callbacks used in the nextTick, waiting this current process to end to
+        then get started;<br>
+        4 - Imediate Queue: it works like the timers queue, but has a bigger priority;<br>
+        5 - Close Queue: handles close event callbacks.
+    </p>
+
+    <h2>
+        Question 2:
+    </h2>
+    <p>
+        Output:<br>
+        start <br>
+        end<br>
+        nextTick 1<br>
+        nextTick 2<br>
+        Promise...1<br>
+        Promise...2<br>
+        timeout 1<br>
+        timeout 2<br>
+        nextTick 3<br>
+        timeout 3<br>
+    </p>
+
+    <h2>
+        Question 3:
+    </h2>
+    <p>
+        My expectation was:<br>
+        Immediate<br>
+        timeout<br>
+        readFile...<br><br>
+        This because setImediate has more priority than timers, then timeout would fall into place, followed by readFile
+        But, when running it locally I found it different. It seems like because of the enviroment of my
+        computer.<br><br>
+        Output:<br>
+        timeout<br>
+        readFile....<br>
+        Immediate
+    </p>
+
+    <h2>
+        Question 4:
+    </h2>
+    <p>
+        In browser the output is: Hello World<br>
+        In node.js it was undefined.<br>
+        This happened because in node, to create a variable in the global object, you don't use var, let nor const,
+        that's why its output was undefined.<br>
+        On the other hand, the result came out Hello World in the broswer because when using this sintax, the object is
+        created in the Global (Window) object, working properly.
+    </p>
+
+    <h2>
+        Question 5:
+    </h2>
+    <p>
+        The error is on the last line. It happens because on the file, the exportations happens properly, but to use the
+        method,
+        we need to access it with '.'.<br>
+        The correct way would be getName.getName();<br>
+        The first getName receives the properties being exported from pattern.js, we need then access it to use it.
+    </p>
+
+    <h2>
+        Question 6:
+    </h2>
+    <p>
+        It will throw an error because in app.js the import made is referencing to an unexistent module on the very
+        first
+        line of app.js, but
+        if the import was correct, it would print "Josh Edward".
+    </p>
+
+    <h2>
+        Question 7:
+    </h2>
+    <p>
+        It will throw an error because in app.js the import made is referencing to an unexistent module on the very
+        first
+        line of app.js,
+        but if the import was correct, it wouldn't work because the named property which is a functions is passed, then
+        on the last line it had to be "getFullName.getFullName(), and the output would be "Josh Edward".
+    </p>
+
+    <h2>
+        Question 8:
+    </h2>
+    <p>
+        Because apply is being used, the context passed to the function is null and export and module are empty.
+        What those values are don't make much difference in this case, it will just make the reference of the function
+        in
+        the const
+        result able to be called without "()" as a callback function. If it werent for the apply, the console would
+        print
+        the function itself,
+        but the way it is, the output will be the module.exports object: {firstname: 'John', lastname: 'Smith'}.
+    </p>
+</body>
+
+</html>

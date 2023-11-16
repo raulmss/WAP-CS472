@@ -1,0 +1,60 @@
+Question 1:
+1 - Timers Queue: This queu is the one that will take of the setTimeOut and setInterval callbacks.
+2 - I/O Queue: This will take care about I/O related callbacks, such as network requests and file system.
+3 - nextTick Queue: Takes care of those callbacks used in the nextTick, waiting this current process to end to
+then get started.
+4 - Imediate Queue: it works like the timers queue, but has a bigger priority;
+5 - Close Queue: handles close event callbacks.
+
+Question 2:
+Output:
+start
+end
+nextTick 1
+nextTick 2
+Promise...1
+Promise...2
+timeout 1
+timeout 2
+nextTick 3
+timeout 3
+
+Question 3:
+My expectation was:
+Immediate
+timeout
+readFile...
+    This because setImediate has more priority than timers, then timeout would fall into place, followed by readFile
+But, when running it locally I found it different. It seems like because of the enviroment of my computer. 
+Output:
+timeout
+readFile....
+Immediate
+
+Question 4:
+In browser the output is: Hello World
+In node.js it was undefined.
+This happened because in node, to create a variable in the global object, you don't use var, let nor const,
+that's why its output was undefined.
+On the other hand, the result came out Hello World in the broswer because when using this sintax, the object is 
+created in the Global (Window) object, working properly.
+
+Question 5:
+The error is on the last line. It happens because on the file, the exportations happens properly, but to use the method,
+we need to access it with '.'. The correct way would be getName.getName();
+The first getName receives the properties being exported from pattern.js, we need then access it to use it.
+
+Question 6:
+It will throw an error because in app.js the import made is referencing to an unexistent module on the very first line of app.js, but
+if the import was correct, it would print "Josh Edward".
+
+Question 7:
+It will throw an error because in app.js the import made is referencing to an unexistent module on the very first line of app.js,
+but if the import was correct, it wouldn't work because the named property which is a functions is passed, then
+on the last line it had to be "getFullName.getFullName(), and the output would be "Josh Edward".
+
+Question 8:
+Because apply is being used, the context passed to the function is null and export and module are empty.
+What those values are don't make much difference in this case, it will just make the reference of the function in the const
+result able to be called without "()" as a callback function. If it werent for the apply, the console would print the function itself, 
+but the way it is, the output will be the module.exports object: {firstname: 'John', lastname: 'Smith'}.
